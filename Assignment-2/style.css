@@ -1,0 +1,534 @@
+style.css
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+/* Chat Page Styles */
+.chat {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.chat h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.chat-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.messages {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: fit-content;
+    align-self: flex-start;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: #8fc7fc;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Pet Cards Section */
+.pets {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.pet-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 280px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.pet-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.pet-card h3 {
+    margin: 15px 0 10px;
+}
+
+.pet-card p {
+    margin: 5px 0;
+}
+
+.pet-card a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.pet-card a:hover {
+    background-color: #555;
+}
+
+.pet-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Adoption Form Styles */
+.adopt-form {
+    padding: 40px 20px;
+    background-color: white;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.adopt-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.adopt-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.adopt-form input, .adopt-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.adopt-form input:focus, .adopt-form textarea:focus {
+    outline-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.adopt-form textarea {
+    height: 150px;
+}
+
+.adopt-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.adopt-form button:hover {
+    background-color: #45a049;
+}
+
+.adopt-form .form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.adopt-form .form-footer p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* Contact Form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form input, .contact form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact form button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #555;
+}
+
+/* FAQ Page Styles */
+.faq {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    font-size: 1.6rem;
+    color: #4CAF50; /* Green for FAQ question */
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* See More Pets Button Styles */
+.see-more-pets {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-see-more {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-see-more:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.btn-see-more:focus {
+    outline: none;
+}
+
+
+/* Profile Button Styling */
+.btn-profile {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-profile:hover {
+    background-color: #45a049; /* Darker Green on Hover */
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.btn-profile:active {
+    transform: translateY(2px); /* Button presses down when clicked */
+}
+
+/* Profile Section Styles */
+.profile-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.profile-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Profile Card Styling */
+.profile-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.profile-info strong {
+    color: #333;
+}
+
+/* Edit Profile Button */
+.btn-edit-profile {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #FF9800; /* Orange */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-edit-profile:hover {
+    background-color: #fb8c00; /* Darker Orange on Hover */
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.btn-edit-profile:active {
+    transform: translateY(2px); /* Button presses down when clicked */
+}
+
+
+/* Pet Care Page Styles */
+.pet-care {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.pet-care h2 {
+    font-size: 2.5rem;
+    color: #4CAF50; /* Green */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.pet-care h3 {
+    font-size: 1.8rem;
+    color: #4CAF50; /* Green */
+    margin-bottom: 15px;
+}
+
+.pet-care p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.care-guide {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    border-left: 5px solid #4CAF50;
+}
+
+.pet-care-btn-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pet-care-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pet-care-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+}
+
+.pet-care-btn:active {
+    transform: translateY(2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pet-care {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .pet-care h2 {
+        font-size: 2rem;
+    }
+
+    .pet-care h3 {
+        font-size: 1.6rem;
+    }
+
+    .pet-care p {
+        font-size: 1rem;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
